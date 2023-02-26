@@ -63,9 +63,15 @@ d3.json(url).then(function (data) {
     var div = L.DomUtil.create("div", "legend");
 
     var legendInfo = "<h1>Earthquake Depth<br />(in km)</h1>" +
-    "<div class=\"labels\">" +
-      "<div class=\"min\">" +"</div>"+
-      "<div class=\"max\">"+"Hello"+"</div>"+
+    "<div>"+
+    "<ul class='legend-labels'>"+
+      "<li><span style='background:#8DD3C7;'></span>-10-10</li>"+
+      "<li><span style='background:#FFFFB3;'></span>10-30</li>"+
+      "<li><span style='background:#BEBADA;'></span>30-50</li>"+
+      "<li><span style='background:#FB8072;'></span>50-70</li>"+
+      "<li><span style='background:#80B1D3;'></span>70-90</li>"+
+      "<li><span style='background:#80B1D3;'></span>90+</li>"+
+    "</ul>"+
     "</div>";
 
     div.innerHTML = legendInfo
